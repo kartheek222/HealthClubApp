@@ -20,6 +20,14 @@
             android:name=".task1.LoginActivity"
             android:label="@string/title_activity_login" >
         </activity>
+        <activity
+            android:name=".task1.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".task1.UpdateProfileActivity"
+            android:label="@string/title_activity_update_profile" >
+        </activity>
     </application>
 
 </manifest>
