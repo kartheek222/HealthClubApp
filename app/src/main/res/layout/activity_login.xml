@@ -8,10 +8,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kartheek.healthclubapp.task1.LoginActivity">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_centerInParent="true"
-        android:onClick="signUser"
-        android:src="@drawable/iv_signin" />
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signUser"
+            android:src="@drawable/iv_signin" />
+
+        <TextView
+            android:id="@+id/tvSignout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffdf4c34"
+            android:minEms="6"
+            android:gravity="center"
+            android:text="@string/signout"
+            android:padding="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 </RelativeLayout>

@@ -1,18 +1,24 @@
 package com.kartheek.healthclubapp.task1;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.kartheek.healthclubapp.R;
 
 public class UpdateProfileActivity extends ActionBarActivity {
+
+    private GoogleApiClient mGoogleApiClient;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
+
     }
 
     @Override
@@ -24,16 +30,15 @@ public class UpdateProfileActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
+        switch (id) {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            case R.id.action_update_profile:
+                return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
+
+
 }

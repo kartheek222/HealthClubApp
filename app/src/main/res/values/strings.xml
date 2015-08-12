@@ -6,4 +6,6 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_update_profile">UpdateProfileActivity</string>
+    <string name="signout">SignOut</string>
+    <string name="update_profile">Update Profile</string>
 </resources>

@@ -28,6 +28,7 @@
             android:name=".task1.UpdateProfileActivity"
             android:label="@string/title_activity_update_profile" >
         </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
     </application>
 
 </manifest>
